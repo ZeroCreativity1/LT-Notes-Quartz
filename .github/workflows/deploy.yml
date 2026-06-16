@@ -18,6 +18,14 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      - name: Checkout vault content
+        uses: actions/checkout@v4
+        with:
+          repository: ZeroCreativity1/LT-Notes
+          token: ${{ secrets.VAULT_TOKEN }}
+          path: content
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
