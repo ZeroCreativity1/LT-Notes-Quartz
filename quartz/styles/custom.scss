@@ -1,3 +1,23 @@
 @use "./variables.scss" as *;
 
 // put your custom CSS here!
+h3 {
+  color: #2e80f2; // Things blue
+}
+h4 {
+  color: #e5b567; // Things yellow
+  text-transform: uppercase;
+}
+h5 {
+  color: #e83e3e; // Things red
+}
+strong, em {
+  color: #ff82b2; // Things pink
+}
+blockquote {
+  color: #3eb4bf; // Things green
+  font-style: italic;
+}
+li {
+  margin-left: 1.1em; // matches Things' --nested-padding
+}
