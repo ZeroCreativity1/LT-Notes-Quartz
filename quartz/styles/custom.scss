@@ -1,23 +1,46 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ----- Nested list spacing -----
+ul, ol {
+  padding-left: 1.5em;
+}
+
+// ----- Custom task checkbox icons -----
+input[data-task="!"] {
+  appearance: none;
+  width: 1.1em;
+  height: 1.1em;
+  &::before {
+    content: "⚠️";
+    font-size: 0.9em;
+  }
+}
+
+input[data-task="?"] {
+  appearance: none;
+  width: 1.1em;
+  height: 1.1em;
+  &::before {
+    content: "❓";
+    font-size: 0.9em;
+  }
+}
+
+// ----- Heading colors -----
 h3 {
-  color: #2e80f2; // Things blue
+  color: #2e80f2;
 }
 h4 {
-  color: #e5b567; // Things yellow
+  color: #e5b567;
   text-transform: uppercase;
 }
 h5 {
-  color: #e83e3e; // Things red
+  color: #e83e3e;
 }
 strong, em {
-  color: #ff82b2; // Things pink
+  color: #ff82b2;
 }
 blockquote {
-  color: #3eb4bf; // Things green
+  color: #3eb4bf;
   font-style: italic;
-}
-li {
-  margin-left: 1.1em; // matches Things' --nested-padding
 }
